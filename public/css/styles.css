@@ -1,0 +1,302 @@
+/* 
+PALETA DE COLORES
+Amarillo: #EAC923;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "roboto";
+    margin: 0;
+    background-color: #ebebeb;
+}
+
+.headboard {
+    /* width: 100vw; */
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #EAC923;
+    padding: 24px;
+}
+
+#logo {
+    width: 50%;
+}
+
+.search {
+    /* display: flex; */
+    width: 45%;
+    margin: auto;
+    margin-left: 2%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.search input {
+    width: 90%;
+    border: 0px;
+    padding: 5%;
+    padding-right: 7%;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.search button {
+    width: auto;
+    background-color: white;
+    border: 0;
+    position: absolute;
+    margin: auto;
+    padding: 5%;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.paymentmethod {
+    text-align: center;
+    margin: auto;
+    width: auto;
+    /* padding-left: 2%; */
+    padding: 15px 2% 5px;
+}
+
+#navbar {
+    width: 100%;
+    margin: 20px 0 0;
+}
+
+#navbar ul {
+    display: flex;
+    /* margin: 20px auto; */
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-store {
+    text-align: center;
+    display: flex;
+    margin-bottom: 20px;
+    /* justify-content: space-between; */
+}
+
+.nav-user {
+    text-align: center;
+    /* margin-left: auto; */
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.menu {
+    text-align: center;
+    font-size: 24px;
+    color: #ebebeb;
+    width: auto;
+    margin: 20px auto 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1259c3;
+}
+
+.banner img {
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+section article {
+    width: 49%;
+    background-color: white;
+    /* margin-bottom: 10px; */
+    border: 1px solid #ebebeb;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-product {
+    width: 100%;
+}
+
+.caract-product {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+
+.animation-car {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    background-color: white;
+    color: #39b54a;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #39b54a;
+    right: 20px;
+    top: -15px;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.text-general {
+    font-size: 12px;
+}
+
+.text-tittle {
+    margin: 20px 0 10px;
+    width: 100%;
+    font-size: 24px;
+    color: #666;
+}
+
+.text-price {
+    /* width: 40%; */
+    font-size: 18px;
+    margin: 0;
+}
+
+.text-discount {
+    width: 40%;
+    font-size: 16px;
+    color: #39b54a;
+    margin: auto;
+}
+
+.text-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-margin {
+    margin: 0;
+}
+
+.caract-product div {
+    display: flex;
+    margin: 5px 0;
+}
+
+.product-num {
+    display: flex;
+    /* margin: 0; */
+}
+
+footer {
+    padding-top: 50px;
+    background-color: white;
+    text-align: center;
+    color: #666;
+}
+
+.fIcons{
+    font-size: 2em;
+    color: #1259c3;
+    margin-bottom: 10px;
+}
+
+footer article {
+    margin-bottom: 50px;
+}
+
+#copyright {
+    font-size: 12px;
+    text-align: left;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 360px) {
+    .text-description {
+        display: none;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    section article {
+        width: 100%;
+    }
+}
+
+@media (min-width: 361px) {
+    section article {
+        box-shadow: 0 0 10px rgb(100, 100, 100);
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .nav-store {
+        max-width: 400px;
+        justify-content: space-between;
+    }
+
+    .nav-user {
+        max-width: 380px;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 769px) {
+    section article {
+        width: 24%;
+    }
+
+    #logo {
+        width: 40%;
+    }
+
+    .search {
+        width: 30%;
+    }
+
+    .paymentmethod {
+        width: 25%;
+    }
+
+    #navbar {
+        display: flex;
+    }
+
+    /* #navbar ul {
+        display: flex;
+    } */
+
+    .nav-store{
+        /* justify-content: space-between; */
+        flex-basis: 380px;
+    }
+
+    .nav-user {
+        margin-left: auto;
+        /* justify-content: space-between; */
+        flex-basis: 350px;
+        /* justify-content: flex-end; */
+    }
+}
