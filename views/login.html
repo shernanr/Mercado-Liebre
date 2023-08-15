@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario Registro</title>
+    <title>Login</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="/css/style-register.css">
+    <link rel="stylesheet" href="/css/style-login.css">
 </head>
 <body>
     <header>
@@ -43,58 +43,11 @@
     </header>
     <main>
         <form action="" method="post">
-            <h2>Formulario Registro</h2>
-            <input type="text" name="name-lastname" id="name-lastname" class="controls" placeholder="Nombre y Apellido" minlength="5" required>
+            <h2>Iniciar sesión</h2>
             <input type="text" name="user" id="user" class="controls" placeholder="Nombre de usuario" minlength="5" required>
-            <input type="email" name="mail" id="mail" class="controls" placeholder="E-mail" required>
-            <section class="birthdate">
-                <h3>Fecha de Nacimiento</h3>
-                <input type="date" name="birthdate" id="birthdate" min="1923-01-01" max="2024-01-01" required>
-            </section>
-            <input type="text" name="address" id="address" class="controls" placeholder="Domicilio">
-            <section class="user-profile">
-                <h3>Perfil de usuario</h3>
-                <div>
-                    <input type="radio" name="user-profile" value="sell" id="seller">
-                    <label for="seller">Vendedor</label>
-                </div>
-                <div>
-                    <input type="radio" name="user-profile" value="buy" id="buyer" checked>
-                    <label for="buyer">Comprador</label>
-                </div>
-            </section>
-            <section class="interest">
-                <h3>Intereses</h3>
-                <div>
-                    <input type="checkbox" name="interest" value="electro" id="electro">
-                    <label for="electro">Electro</label>                    
-                </div>
-                <div>
-                    <input type="checkbox" name="interest" value="healthy" id="healthy">
-                    <label for="healthy">Vida sana</label>                    
-                </div>
-                <div>
-                    <input type="checkbox" name="interest" value="fashion" id="fashion">
-                    <label for="fashion">Moda</label>                    
-                </div>
-                <div>
-                    <input type="checkbox" name="interest" value="toys" id="toys">
-                    <label for="toys">Juguetería</label>                    
-                </div>
-                <div>
-                    <input type="checkbox" name="interest" value="home" id="home">
-                    <label for="home">Hogar</label>                    
-                </div>
-            </section>
-            <section class="photo-porfile">
-                <h3>Foto de perfil</h3>
-                <input type="file" name="avatar" accept="image/*">
-            </section>
             <input type="password" name="password" id="password" class="controls" placeholder="Contraseña" minlength="6" required>
-            <input type="password" name="confirm-password" id="confirm-password" class="controls" placeholder="Confirmar contraseña" minlength="6" required>
             <section class="buttons">
                 <a href="/" id="send">Enviar</a>
-                <input type="reset" name="cancel" value="Cancelar" id="cancel">
                 <!-- <input type="submit" name="prueba-enviar" value="ENVIAR"> -->
             </section>
         </form>
