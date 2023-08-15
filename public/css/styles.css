@@ -22,7 +22,6 @@ body {
 /* -------------> HEADER <------------- */
 
 header {
-    /* width: 100vw; */
     display: flex;
     flex-wrap: wrap;
     background-color: #EAC923;
@@ -38,12 +37,11 @@ header {
 }
 
 .search {
-    /* display: flex; */
     width: 45%;
     margin: auto;
-    margin-left: 2%;
+    /* margin-left: 2%; */
     position: relative;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .search input {
@@ -72,8 +70,7 @@ header {
     text-align: center;
     margin: auto;
     width: auto;
-    /* padding-left: 2%; */
-    padding: 15px 0 5px 2%;
+    padding: 15px 0 5px 10px;
 }
 
 #navbar {
@@ -83,23 +80,22 @@ header {
 
 #navbar ul {
     display: flex;
-    /* margin: 20px auto; */
     list-style-type: none;
     padding: 0;
+    margin-bottom: 10px;
 }
 
 .nav-store {
     text-align: center;
     display: flex;
     margin-bottom: 20px;
-    /* justify-content: space-between; */
+    margin: auto 0;
 }
 
 .nav-user {
     text-align: center;
-    /* margin-left: auto; */
     display: flex;
-    /* justify-content: space-between; */
+    margin: auto 0;
 }
 
 .register, .login {
@@ -135,7 +131,7 @@ main{
 section article {
     width: 49%;
     background-color: white;
-    /* margin-bottom: 10px; */
+    margin-bottom: 10px;
     border: 1px solid #ebebeb;
 }
 
@@ -252,6 +248,10 @@ footer {
     transition: color 0.5s;
 }
 
+footer article{
+    margin-bottom: 10px;
+}
+
 footer article:hover .fIcons{
     color: #3483fa;
 }
@@ -278,7 +278,6 @@ footer article:hover .fIcons{
 
     section article {
         width: 100%;
-        margin-bottom: 10px;
     }
 }
 
